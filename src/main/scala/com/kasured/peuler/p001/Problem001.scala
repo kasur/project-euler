@@ -1,3 +1,5 @@
+package com.kasured.peuler.p001
+
 object Problem001 {
 
     //boilerplate
@@ -16,11 +18,10 @@ object Problem001 {
     @scala.annotation.tailrec
     def doSolve(N: Long, mod: Long, idx: Long, acc: Long): Long = {
         //calc current value
-        val n = mod * idx;
+        val n = mod * idx
         //check if it out of upper bound return accumulator
         //else do tailrec call with updated sum and increased index
         if(n >= N) acc else doSolve(N, mod, idx + 1, acc + n)
     }
 
 }
-

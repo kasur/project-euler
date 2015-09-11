@@ -8,8 +8,8 @@ package object p007 {
       case false => step(nn, candidate + 1)
     }
     def isPrime(candidate: Long): Boolean = candidate match {
-      case x if(x == 2 || x == 3 || x == 5) => true
-      case x if( (x & 1) == 0 || (x % 3) == 0) => false
+      case x if x == 2 || x == 3 || x == 5 => true
+      case x if (x & 1) == 0 || (x % 3) == 0 => false
       case _ => check(5, math.round(math.sqrt(candidate.toDouble)).toLong, candidate)
     }
     @annotation.tailrec

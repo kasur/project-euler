@@ -1,6 +1,7 @@
-package com.kasured.peuler.p007
+package com.kasured.peuler
 
-import org.scalatest.{Matchers, GivenWhenThen, FeatureSpec}
+import com.kasured.peuler.p007._
+import org.scalatest.{FeatureSpec, GivenWhenThen, Matchers}
 
 /**
  * @author kasured.
